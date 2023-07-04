@@ -1,0 +1,23 @@
+
+
+<h3>Alumno ausente: <small class="text-danger">{{ deleteAlumno }}</small></h3>
+
+
+<button 
+  (click)="removeAlumno()"
+  class="btn btn-outline-danger">
+  Borrar último Alumno
+</button>
+
+<div>
+  <h3></h3>
+</div>
+
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let name of listAlumnos"
+      class="list-group-item">
+      {{ name | uppercase }}
+  </li>
+
+</ul>
